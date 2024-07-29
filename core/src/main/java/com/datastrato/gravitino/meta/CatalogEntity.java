@@ -76,7 +76,7 @@ public class CatalogEntity implements Entity, Auditable, HasIdentifier {
    */
   @Override
   public Map<Field, Object> fields() {
-    Map<Field, Object> fields = new HashMap<>();
+    Map<Field, Object> fields = new LinkedHashMap<>();
     fields.put(ID, id);
     fields.put(NAME, name);
     fields.put(COMMENT, comment);
